@@ -4,10 +4,9 @@ import os
 import socket
 import random
 import json
-from log import Log
 
 class HelloWorldUser(HttpUser):
-    wait_time = between(1, 2)    
+    wait_time = between(5, 10)    
     @task
     def prueba_rest_log(self):
       
